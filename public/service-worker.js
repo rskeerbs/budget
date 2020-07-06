@@ -1,14 +1,13 @@
 const FILES_TO_CACHE = [
     '/',
-    '/index.html',
-    '/index.js'
+    '/index.js',
     '/manifest.webmanifest',
-    '/assets/css/style.css',
-    '/assets/images/icons/icon-152x152.png',
-    '/assets/images/icons/icon-512x512.png',
-    '/transaction.js'
+    '/styles.css',
+    '/icons/icon-192x192.png',
+    '/icons/icon-512x512.png'
+    
   ];
-  
+  //everything in public folder other than index.html
   const CACHE_NAME = "static-cache-v2";
   const DATA_CACHE_NAME = "data-cache-v1";
   
@@ -34,7 +33,7 @@ const FILES_TO_CACHE = [
               }
             })
           );
-        });
+        })
       );
   
       self.clients.claim();
@@ -48,3 +47,4 @@ const FILES_TO_CACHE = [
             });
           })
         );
+        });
